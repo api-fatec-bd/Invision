@@ -23,6 +23,7 @@ let validationSchema = yup.object().shape({
     email: yup.string().email().required("*Este campo não pode ser vazio."),
     password: yup
         .string()
+        .min(6,'A senha não pode ter menos de 6 caracteres')
         .required("*Este campo não pode ser vazio.")
 })
 
