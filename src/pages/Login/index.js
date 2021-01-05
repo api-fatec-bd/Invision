@@ -1,6 +1,6 @@
 import React from 'react';
 import * as yup from 'yup';
-import { FormikProvider, useFormik } from "formik";
+import {useFormik } from "formik";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from '@material-ui/core/TextField';
 import Carousel from 'react-bootstrap/Carousel'
@@ -36,7 +36,7 @@ export default function Login(onSubmit) {
     const emailProps = formik.getFieldProps("email");
     const passwordProps = formik.getFieldProps('password');
     return (
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit} data-testid="form-add-login" >
             <Container>
                 <MuiThemeProvider>
                     <ContainerCarousel>
@@ -77,13 +77,13 @@ export default function Login(onSubmit) {
                         </ContainerCenter>
                         <ContainerCenter>
                             <ContainerCenter>
-                                <TextField label="Users name or Email" type="email" name="email" InputLabelProps={{ style: { fontSize: 14 } }} {...emailProps} />
+                            <TextField label="Users name or Email" type="email" name="email" inputProps={{ 'data-testid': 'email' }} InputLabelProps={{ style: { fontSize: 14 } }} {...emailProps} />
                                 {formik.touched.email && formik.errors.email ? (
                                     <ErrorMessage>{formik.errors.email}</ErrorMessage>
                                 ) : null}
                             </ContainerCenter>
                             <ContainerCenter>
-                                <TextField label="Password" type="password" name="password" InputLabelProps={{ style: { fontSize: 14 } }} {...passwordProps} />
+                                <TextField label="Password" type="password" name="password" inputProps={{ 'data-testid': 'password' }} InputLabelProps={{ style: { fontSize: 14 } }} {...passwordProps} />
                                 {formik.touched.password && formik.errors.password ? (
                                     <ErrorMessage>{formik.errors.password}</ErrorMessage>
                                 ) : null}
