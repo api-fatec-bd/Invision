@@ -1,5 +1,6 @@
 name: Node.js CI
 
+
 on:
   push:
     branches: [ main ]
@@ -32,7 +33,7 @@ jobs:
 
     - name: Build
       run: npm run build
-      
+
     - name: Deploy
       run: |
         git config --global user.name $user_name
