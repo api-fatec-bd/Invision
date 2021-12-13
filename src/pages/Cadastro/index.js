@@ -1,7 +1,6 @@
 import React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import * as yup from 'yup';
-import { FormikProvider, useFormik } from "formik";
+import { useFormik } from "formik";
 import TextField from '@material-ui/core/TextField';
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -111,7 +110,7 @@ export default function Cadastro(onSubmit) {
                         </Container>
                     </ContainerCenter>
                     <ContainerCenter>
-                        <SignGoogle variant="contained" startIcon={<img src={googleIcon} />}> Sign with Google</SignGoogle>
+                        <SignGoogle variant="contained" startIcon={<img src={googleIcon} alt="Sign In"/>}> Sign with Google</SignGoogle>
                     </ContainerCenter>
                     <ContainerTerms>
                         <ContainerCreateAccount>
