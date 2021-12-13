@@ -102,7 +102,7 @@ export default function Login(onSubmit) {
                             <Line />
                         </Container>
                         <ContainerCenter>
-                            <SignGoogle variant="contained" startIcon={<img src={googleIcon} />}> Sign with Google</SignGoogle>
+                            <SignGoogle variant="contained" startIcon={<img src={googleIcon} alt="Sign In"/>}> Sign with Google</SignGoogle>
                         </ContainerCenter>
                         <Container>
                             <ContainerCreateAccount>
