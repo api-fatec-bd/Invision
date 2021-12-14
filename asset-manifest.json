@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Invision/static/css/main.0888ce2d.chunk.css",
-    "main.js": "/Invision/static/js/main.80b2954d.chunk.js",
-    "main.js.map": "/Invision/static/js/main.80b2954d.chunk.js.map",
+    "main.js": "/Invision/static/js/main.e06adc97.chunk.js",
+    "main.js.map": "/Invision/static/js/main.e06adc97.chunk.js.map",
     "runtime-main.js": "/Invision/static/js/runtime-main.1e186ed7.js",
     "runtime-main.js.map": "/Invision/static/js/runtime-main.1e186ed7.js.map",
     "static/css/2.86cd6d42.chunk.css": "/Invision/static/css/2.86cd6d42.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.86cd6d42.chunk.css",
     "static/js/2.3065b51e.chunk.js",
     "static/css/main.0888ce2d.chunk.css",
-    "static/js/main.80b2954d.chunk.js"
+    "static/js/main.e06adc97.chunk.js"
   ]
 }
