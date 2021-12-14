@@ -1,7 +1,7 @@
 {
   "name": "invision",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://api-fatec-bd.github.io/Invision/",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
