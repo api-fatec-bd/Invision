@@ -6,7 +6,7 @@ import Cadastro from './pages/Cadastro'
 
 export default function Routes() {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename='https://api-fatec-bd.github.io/Invision/'>
             <Switch>
                 <Route path="/" exact component={Login} />
                 <Route path="/cadastro" component={Cadastro} />
